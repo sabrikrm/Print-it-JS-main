@@ -82,12 +82,12 @@ function dotSelected(currentIndex) {
 }
 
 function changeSlide(currentIndex) {
-    // Mise à jour de l'image
+    // mise a jour image
     bannerImg.src = `./assets/images/slideshow/${slides[currentIndex].image}`;
 
-    // Mise à jour du texte
+    // mise a jour texte
     bannerText.innerHTML = slides[currentIndex].tagLine;
 
-    // Mise à jour des bullets
+    // mise a jour bullet
     dotSelected(currentIndex);
 }
